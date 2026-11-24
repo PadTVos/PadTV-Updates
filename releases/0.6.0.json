@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "version": "0.6.0",
+  "padbridge_version": "0.3.0",
+  "release": "Native Compatibility",
+  "stage": "experimental",
+  "architecture": "amd64",
+  "debian": "13",
+  "date": "2026-11-24",
+  "artifact": {
+    "name": "padtv-0.6.0-amd64.iso",
+    "bytes": 2442657792,
+    "sha256": "dc990e71dd2390820085aae0482e1bc07ee3865ca2ecb2f40a67076999c98e03",
+    "download_url": null,
+    "availability": "GitHub Release split ISO",
+    "release_url": "https://github.com/PadTVos/PadTV-OS/releases/tag/v0.6.0",
+    "parts": [
+      {
+        "name": "padtv-0.6.0-amd64.iso.part1",
+        "bytes": 1900000000,
+        "sha256": "0715ab11d25463f21752a9cf7e100baad16ebf6fcd1beb87452d35375742402e",
+        "url": "https://github.com/PadTVos/PadTV-OS/releases/download/v0.6.0/padtv-0.6.0-amd64.iso.part1"
+      },
+      {
+        "name": "padtv-0.6.0-amd64.iso.part2",
+        "bytes": 542657792,
+        "sha256": "b61129f790fe920130a58410c7ce73738ee0bde432e61e0bf909b9b63a1449fa",
+        "url": "https://github.com/PadTVos/PadTV-OS/releases/download/v0.6.0/padtv-0.6.0-amd64.iso.part2"
+      }
+    ]
+  },
+  "automatic_install": false,
+  "signature": null,
+  "tests": {
+    "passed": 167,
+    "original_tests_retained": 145
+  },
+  "first_party_test_app": "https://github.com/PadTVos/PadBridge/releases/tag/store-test-1",
+  "validation": "https://github.com/PadTVos/PadTV-OS/blob/main/docs/validation-0.6.md",
+  "limits": [
+    "Experimental API subset",
+    "ART unavailable",
+    "Bionic/ARM/WebView/media APIs incomplete",
+    "No Widevine/GMS/device certification"
+  ],
+  "verification": {
+    "bios_windows_whpx": true,
+    "uefi_kvm": true,
+    "uefi_install_and_disk_boot_without_iso": true,
+    "physical_hardware": false
+  }
+}
