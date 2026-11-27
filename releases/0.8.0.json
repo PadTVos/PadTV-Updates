@@ -26,7 +26,7 @@
       }
     ],
     "download_url": null,
-    "availability": "pending publication",
+    "availability": "GitHub Release split ISO",
     "release_url": "https://github.com/PadTVos/PadTV-OS/releases/tag/v0.8.0"
   },
   "automatic_install": false,
@@ -63,6 +63,7 @@
     "physical_hardware": false,
     "installation_test_image_sha256": "fb5b4a812b64f6aa95a5520f71a0fbcb7b832c734cae145b53da5d6a6b49dd20",
     "windows_preview": true,
-    "user_virtual_disk_unchanged": true
+    "user_virtual_disk_unchanged": true,
+    "remote_asset_size_and_sha256": true
   }
 }
