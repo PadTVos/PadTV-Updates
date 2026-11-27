@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "version": "0.7.0",
+  "padbridge_version": "0.4.0",
+  "release": "Android Runtime & Multimedia Compatibility",
+  "stage": "experimental",
+  "architecture": "amd64",
+  "debian": "13",
+  "date": "2026-11-27",
+  "artifact": {
+    "name": "padtv-0.7.0-amd64.iso",
+    "bytes": 2445017088,
+    "sha256": "58860a4ce0c1d666319387b1c269af469f500eb7703c63dc03839a872e5a99ec",
+    "parts": [
+      {
+        "name": "padtv-0.7.0-amd64.iso.part1",
+        "bytes": 1900000000,
+        "sha256": "51def7c4709eb5556aace13e83c008915a2441b9a63b5435fca4d2bc572917a0",
+        "url": "https://github.com/PadTVos/PadTV-OS/releases/download/v0.7.0/padtv-0.7.0-amd64.iso.part1"
+      },
+      {
+        "name": "padtv-0.7.0-amd64.iso.part2",
+        "bytes": 545017088,
+        "sha256": "8f4a81f6190f285a67746c903f90fc9c06708dd61745fedc8ab6b81ad92ff163",
+        "url": "https://github.com/PadTVos/PadTV-OS/releases/download/v0.7.0/padtv-0.7.0-amd64.iso.part2"
+      }
+    ],
+    "download_url": null,
+    "availability": "GitHub Release split ISO",
+    "release_url": "https://github.com/PadTVos/PadTV-OS/releases/tag/v0.7.0"
+  },
+  "automatic_install": false,
+  "signature": null,
+  "tests": {
+    "passed": 189,
+    "original_tests_retained": 167,
+    "new": 22
+  },
+  "validation": "https://github.com/PadTVos/PadTV-OS/blob/main/docs/validation-0.7.md",
+  "first_party_test_app": "https://github.com/PadTVos/PadBridge/releases/tag/store-test-1",
+  "limits": [
+    "Jellyfin, YouTube and Netflix do not launch successfully; no playback in those apps",
+    "ART unavailable; full Bionic/linker, x86-32/ARM, Android framework/AndroidX/Compose incomplete",
+    "FFmpeg CPU media and Mesa EGL/GLES subset; physical GPU/HDMI/4K unverified",
+    "WebView subset; no GMS, Widevine or device certification"
+  ],
+  "verification": {
+    "bios_windows_whpx": true,
+    "uefi_kvm": true,
+    "uefi_install_and_disk_boot_without_iso": true,
+    "physical_hardware": false,
+    "installation_test_image_sha256": "8941aeab8d3ae7fdfd2dde0b37e717802c89e47f043a933deadbeda4527d61b6",
+    "final_image_change": "Catalog and diagnostic wording; same installer/runtime source"
+  }
+}
