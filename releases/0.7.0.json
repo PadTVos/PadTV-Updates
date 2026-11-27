@@ -10,18 +10,18 @@
   "artifact": {
     "name": "padtv-0.7.0-amd64.iso",
     "bytes": 2445017088,
-    "sha256": "58860a4ce0c1d666319387b1c269af469f500eb7703c63dc03839a872e5a99ec",
+    "sha256": "81c75a42a10a73c49bd4d3576a870d3131df377c1efd7b7f0c2ee3a2c4fca063",
     "parts": [
       {
         "name": "padtv-0.7.0-amd64.iso.part1",
         "bytes": 1900000000,
-        "sha256": "51def7c4709eb5556aace13e83c008915a2441b9a63b5435fca4d2bc572917a0",
+        "sha256": "e391172a5e326689d5fc2332761f4ac10067040d6bcd654f81b240efb0d0c354",
         "url": "https://github.com/PadTVos/PadTV-OS/releases/download/v0.7.0/padtv-0.7.0-amd64.iso.part1"
       },
       {
         "name": "padtv-0.7.0-amd64.iso.part2",
         "bytes": 545017088,
-        "sha256": "8f4a81f6190f285a67746c903f90fc9c06708dd61745fedc8ab6b81ad92ff163",
+        "sha256": "bfacbb14c2f660e6fa52762ea0d741d7d76563275474798d3a82e12c83c00f87",
         "url": "https://github.com/PadTVos/PadTV-OS/releases/download/v0.7.0/padtv-0.7.0-amd64.iso.part2"
       }
     ],
@@ -50,6 +50,6 @@
     "uefi_install_and_disk_boot_without_iso": true,
     "physical_hardware": false,
     "installation_test_image_sha256": "8941aeab8d3ae7fdfd2dde0b37e717802c89e47f043a933deadbeda4527d61b6",
-    "final_image_change": "Catalog and diagnostic wording; same installer/runtime source"
+    "final_image_change": "Catalog, diagnostic and runtime version labels; same installer and runtime implementation"
   }
 }
