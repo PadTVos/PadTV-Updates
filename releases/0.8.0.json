@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "version": "0.8.0",
+  "padbridge_version": "0.5.0",
+  "release": "Android Runtime Integration",
+  "stage": "experimental",
+  "architecture": "amd64",
+  "debian": "13",
+  "date": "2026-11-27",
+  "artifact": {
+    "name": "padtv-0.8.0-amd64.iso",
+    "bytes": 2445017088,
+    "sha256": "fb5b4a812b64f6aa95a5520f71a0fbcb7b832c734cae145b53da5d6a6b49dd20",
+    "parts": [
+      {
+        "name": "padtv-0.8.0-amd64.iso.part1",
+        "bytes": 1900000000,
+        "sha256": "02e21d36e869e4d9d1ead105fea2b1bf842cbc95ad4e93a5e5b4004529640db6",
+        "url": "https://github.com/PadTVos/PadTV-OS/releases/download/v0.8.0/padtv-0.8.0-amd64.iso.part1"
+      },
+      {
+        "name": "padtv-0.8.0-amd64.iso.part2",
+        "bytes": 545017088,
+        "sha256": "0e0231df6d0049a45e0e9af44b1839a678806aef26c995d1ed2d44e1ad2b8713",
+        "url": "https://github.com/PadTVos/PadTV-OS/releases/download/v0.8.0/padtv-0.8.0-amd64.iso.part2"
+      }
+    ],
+    "download_url": null,
+    "availability": "pending publication",
+    "release_url": "https://github.com/PadTVos/PadTV-OS/releases/tag/v0.8.0"
+  },
+  "automatic_install": false,
+  "signature": null,
+  "tests": {
+    "passed": 219,
+    "original_tests_retained": 189,
+    "original_test_bodies_changed": 0,
+    "new": 30
+  },
+  "validation": "https://github.com/PadTVos/PadTV-OS/blob/main/docs/validation-0.8.md",
+  "first_party_test_app": "https://github.com/PadTVos/PadBridge/releases/tag/store-test-1",
+  "art_runtime": {
+    "available": "optional upstream download; padbridge setup-art",
+    "included_in_iso": false,
+    "jni_create_java_vm_result": 0,
+    "original_dex_execution": true,
+    "original_wayland_widget_input": true,
+    "archive_bytes": 591238194,
+    "archive_sha256": "375302f225cfd66c066b243fcda3fe8535693ccbb205937e3d8a858a1b9ab713"
+  },
+  "jellyfin_milestone_met": false,
+  "limits": [
+    "Original Jellyfin, YouTube and Netflix install but fail during startup; no original app UI or playback",
+    "ART Canvas/Bitmap, SQLite, media, WebView and HTTPS integration incomplete or unverified; existing Enjarify tests remain passing",
+    "Full Bionic/linker, x86-32/ARM, Android Framework/AndroidX/Compose incomplete",
+    "No GMS, Widevine, secure path or device certification; physical devices unverified"
+  ],
+  "verification": {
+    "bios_kvm": true,
+    "bios_windows_whpx": true,
+    "uefi_kvm": true,
+    "uefi_install_and_disk_boot_without_iso": true,
+    "physical_hardware": false,
+    "installation_test_image_sha256": "fb5b4a812b64f6aa95a5520f71a0fbcb7b832c734cae145b53da5d6a6b49dd20",
+    "windows_preview": true,
+    "user_virtual_disk_unchanged": true
+  }
+}

@@ -10,7 +10,7 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('iso',type=Path)
     parser.add_argument('--url',required=True,help='Actual HTTPS download location')
-    parser.add_argument('--version',default='0.7.0')
+    parser.add_argument('--version',default='0.8.0')
     parser.add_argument('--output',type=Path,required=True)
     parser.add_argument('--sign-key',help='Existing GPG key fingerprint; private keys are never copied')
     args=parser.parse_args()
@@ -20,7 +20,7 @@ def main():
     digest=hashlib.sha256()
     with args.iso.open('rb') as stream:
         while chunk:=stream.read(4*1024*1024): digest.update(chunk)
-    data={'schema_version':1,'version':args.version,'os_version':'0.7','release':'Android Runtime & Multimedia',
+    data={'schema_version':1,'version':args.version,'os_version':'0.8','release':'Android Runtime Integration',
           'architecture':'amd64','artifact':{'name':args.iso.name,'bytes':args.iso.stat().st_size,
           'sha256':digest.hexdigest(),'url':args.url},'automatic_install':False}
     args.output.parent.mkdir(parents=True,exist_ok=True)
